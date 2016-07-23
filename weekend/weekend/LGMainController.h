@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LGMainController.h
 //  weekend
 //
 //  Created by 李振刚 on 16/7/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LGMainController : UITabBarController
 
 @end
-
