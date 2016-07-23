@@ -14,9 +14,21 @@
 
 @implementation LGNavController
 
++ (void)initialize {
+    
+    // 获取当前类下面的UIBarButtonItem
+    UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self]];
+    
+    // 设置导航条按钮的文字颜色
+    NSMutableDictionary *titleAttr = [NSMutableDictionary dictionary];
+    titleAttr[NSForegroundColorAttributeName] = [UIColor blackColor];
+    [item setTitleTextAttributes:titleAttr forState:UIControlStateNormal];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
